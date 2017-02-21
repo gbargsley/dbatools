@@ -164,7 +164,6 @@
 		'Get-DbaMaxMemory',
 		'Set-DbaMaxMemory',
 		'Test-DbaMaxMemory',
-		'Restore-DbaDatabase',
 		'Get-DbaDatabaseSnapshot',
 		'Remove-DbaDatabaseSnapshot',
 		'Get-DbaRoleMember',
@@ -217,7 +216,8 @@
 		'Watch-DbaUpdate',
 		'Get-DbaQueryStoreConfig',
 		'Set-DbaQueryStoreConfig',
-		'Unregister-DbaWatchUpdate'
+		'Unregister-DbaWatchUpdate',
+		'Restore-DbaDatabase'
 	)
 	
 	<# coming soon
