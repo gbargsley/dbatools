@@ -30,11 +30,11 @@ https://dbatools.io/Get-DbaAlert
 
 .EXAMPLE
 Get-DbaAlert -SqlInstance localhost
-Returns all SQL Agent Categories on the local default SQL Server instance
+Returns all SQL Agent Alert on the local default SQL Server instance
 
 .EXAMPLE
 Get-DbaAlert -SqlInstance localhost, sql2016
-Returns all SQl Agent Categories for the local and sql2016 SQL Server instances
+Returns all SQL Agent Alert for the local and sql2016 SQL Server instances
 
 #>
 	[CmdletBinding()]
@@ -66,7 +66,7 @@ Returns all SQl Agent Categories for the local and sql2016 SQL Server instances
 				Add-Member -InputObject $jobAlert -MemberType NoteProperty InstanceName -value $jobAlert.Parent.Parent.ServiceName
 				Add-Member -InputObject $jobAlert -MemberType NoteProperty SqlInstance -value $jobAlert.Parent.Parent.DomainInstanceName
 				
-				Select-DefaultView -InputObject $jobAlert -Property ComputerName, InstanceName, SqlInstance, ID, AlertType, Name, Severity, HasNotification, 'IsEnabled'
+				Select-DefaultView -InputObject $jobAlert -Property ComputerName, InstanceName, SqlInstance, ID, Name, AlertType, Severity, HasNotification, 'IsEnabled'
 			}
 		}
 	}
