@@ -53,7 +53,7 @@ Returns a gridview displaying SQLServer, Database, Role, Member for all Database
 .EXAMPLE
 Get-DbaRoleMember -SqlServer ServerA\sql987 -IncludeServerLevel
 
-Returns a gridview displaying SQLServer, Database, Role, Member for both ServerRoles and DatabaseRoles.
+Returns SQLServer, Database, Role, Member for both ServerRoles and DatabaseRoles.
 
 #>
 	[CmdletBinding()]
