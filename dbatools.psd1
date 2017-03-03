@@ -241,7 +241,9 @@
 		'Remove-DbaDatabase',
 		'Get-DbaQueryExecutionTime',
 		'Get-DbaTempdbUsage',
-		'Find-DbaDatabaseGrowthEvent'
+		'Find-DbaDatabaseGrowthEvent',
+		'Get-DbaNetworkActivity',
+		'Get-DbaWhoisActive'
 	)
 	
 	# Cmdlets to export from this module
